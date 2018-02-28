@@ -8,6 +8,7 @@ use_frameworks!
 
   # Pods for insta
     pod 'Parse'
+    pod 'ParseUI'
   target 'instaTests' do
     inherit! :search_paths
     # Pods for testing

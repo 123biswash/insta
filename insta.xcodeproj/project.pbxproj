@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		45C4AB7FCBB4D49496625CB6 /* Pods_insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A7F957556688C83432333F /* Pods_insta.framework */; };
+		4803E4C52045DF0200067226 /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4803E4C42045DF0200067226 /* PhotoMapViewController.swift */; };
+		48B5828D20447DD900C9279D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5828C20447DD900C9279D /* Post.swift */; };
+		48B5828F2044978E00C9279D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5828E2044978E00C9279D /* PostTableViewCell.swift */; };
 		48CBF00C203FC9180024A814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF00B203FC9180024A814 /* AppDelegate.swift */; };
 		48CBF00E203FC9180024A814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBF00D203FC9180024A814 /* ViewController.swift */; };
 		48CBF011203FC9180024A814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CBF00F203FC9180024A814 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		0D19DD65E669215A8BD75817 /* Pods_instaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC496C73E16A7B2BB3A8CCD /* Pods-instaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-instaTests/Pods-instaTests.release.xcconfig"; sourceTree = "<group>"; };
+		4803E4C42045DF0200067226 /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
+		48B5828C20447DD900C9279D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		48B5828E2044978E00C9279D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		48CBF008203FC9180024A814 /* insta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CBF00B203FC9180024A814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48CBF00D203FC9180024A814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,12 +146,15 @@
 			isa = PBXGroup;
 			children = (
 				48CBF00B203FC9180024A814 /* AppDelegate.swift */,
-				48CBF00D203FC9180024A814 /* ViewController.swift */,
-				48CBF00F203FC9180024A814 /* Main.storyboard */,
 				48CBF012203FC9180024A814 /* Assets.xcassets */,
 				48CBF014203FC9180024A814 /* LaunchScreen.storyboard */,
+				48CBF00F203FC9180024A814 /* Main.storyboard */,
 				48CBF017203FC9180024A814 /* Info.plist */,
 				48CBF039203FCDEB0024A814 /* LoginViewController.swift */,
+				48CBF00D203FC9180024A814 /* ViewController.swift */,
+				48B5828C20447DD900C9279D /* Post.swift */,
+				48B5828E2044978E00C9279D /* PostTableViewCell.swift */,
+				4803E4C42045DF0200067226 /* PhotoMapViewController.swift */,
 			);
 			path = insta;
 			sourceTree = "<group>";
@@ -316,11 +325,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-insta/Pods-insta-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -463,9 +474,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4803E4C52045DF0200067226 /* PhotoMapViewController.swift in Sources */,
 				48CBF03A203FCDEB0024A814 /* LoginViewController.swift in Sources */,
 				48CBF00E203FC9180024A814 /* ViewController.swift in Sources */,
 				48CBF00C203FC9180024A814 /* AppDelegate.swift in Sources */,
+				48B5828D20447DD900C9279D /* Post.swift in Sources */,
+				48B5828F2044978E00C9279D /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

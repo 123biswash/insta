@@ -30,7 +30,9 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
             if user != nil {
             print("you're logged in")
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthenticatedViewController") as! UINavigationController
+                self.present(homeVC, animated: true, completion: nil)
+                
             }
         }
     }
@@ -42,7 +44,9 @@ class LoginViewController: UIViewController {
         newUser.signUpInBackground { (success: Bool, error: Error?) in
             if success {
                 print("User Registered successfully")
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+             //   self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthenticatedViewController") as! UINavigationController
+                self.present(homeVC, animated: true, completion: nil)
                 
             } else {
                 print(error?.localizedDescription)
